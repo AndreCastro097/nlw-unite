@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --border: 1px solid #ffffff1a;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: #121214;
+    color: #fff;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 900px
+}
+
+header{
+    padding: 2rem 0;
+}
+
+header .icon i{
+    background-color: orange;
+    border-radius: 5px;
+    padding: .2em .6em;
+    color: #121214;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+form{
+    border: var(--border);
+    border-inline: none; /* pra tirar as bordas laterais, so funfa depois de por o border*/
+    padding: 2rem 0;
+}
+
+fieldset{
+    border: none;
+}
+
+fieldset > div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .9rem;
+}
+
+label{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   border: var(--border);
+   border-radius: 10px;
+   padding: 8px 12px; 
+   cursor: pointer;
+}
+
+
+input{
+   all: unset; 
+   font-size: 1.2rem;
+   color: #c4c4cc;
+   flex: 1;
+}
+
+.input-wrapper{
+    flex: 1;
+}
+
+fieldset button{
+    width: fit-content;
+    border: 0;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 7px 20px;
+    font-weight: 700;
+    color: #00292e;
+}
+
+fieldset button:hover{
+    background-color: rgb(235, 203, 145);
+    cursor: pointer;
+}
+
+fieldset legend, section h2{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #e1e1e6;
+    padding-bottom: 1em;
+}
+
+.lista-participantes{
+    padding: 2rem 0;
+}
+
+.lista-participantes > div{
+    border: var(--border);
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table thead{
+    font-size: 1.2rem;
+    line-height: 16px;
+}
+
+thead th,
+tbody td{
+    padding: 1rem 1.2rem;
+    text-align: center;
+}
+
+tbody td{
+    border-top: var(--border);
+    font-size: 1.1rem;
+    line-height: 15px;
+    color: #c4c4cc;
+}
+
+tbody td strong{
+    color: #fff;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+tbody td small{
+    line-height: 16px;
+}
+
+tbody td button{
+    all: unset; /* reseta tudo do button */
+    color: #9ff9cc;
+}
+
+tbody td button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

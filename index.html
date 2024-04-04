@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLW Formulario de inscrição</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+    <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+    <script>dayjs.locale('pt-br')</script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+
+    
+        <header><div class="icon"><i class="bi bi-code-slash"></i></div></header>
+
+        <form onsubmit="adicionarParticipante(event)">
+            <fieldset>
+                <legend>Inscrição</legend>
+
+                <div>
+                <div class="input-wrapper">
+                    <label for="nome"><i class="bi bi-person-circle"></i><input type="text" placeholder="Nome completo" name="nome" required></label>     
+                </div>
+                <div class="input-wrapper"><label for="nome"><i class="bi bi-envelope"></i><input type="email" placeholder="Email" name="email" required></label> </div>
+                 
+                    <button>REALIZAR INSCRIÇÃO</button>
+                </div>
+            </fieldset>
+        </form>
+        <section class="lista-participantes">
+            <h2>Participantes</h2>
+            <div>
+             <table>
+                <thead>
+                    <tr>
+                        <th>Participantes</th>
+                        <th>Data de inscrição</th>
+                        <th>Data de check-in</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td><strong>Diego Fernandes</strong> <small>diego@gmail.com</small></td>
+                        <td>há 3 dias</td>
+                        <td>há 3 minutos</td>
+                    </tr> -->
+                </tbody>
+             </table>
+            </div>
+    </section>
+    </div>
+    <script src="app.js"></script>
+ 
+</body>
+</html>
